@@ -1,4 +1,4 @@
-I"z<ul id="markdown-toc">
+I"�<ul id="markdown-toc">
   <li><a href="#linux-c-之-getopt-函数" id="markdown-toc-linux-c-之-getopt-函数">Linux C 之 getopt 函数</a>    <ul>
       <li><a href="#1-解决的问题" id="markdown-toc-1-解决的问题">1. 解决的问题</a></li>
       <li><a href="#2函数原型" id="markdown-toc-2函数原型">2.函数原型</a></li>
@@ -8,8 +8,9 @@
   </li>
 </ul>
 
-<p>第一篇博客，github + jekyll
-介绍 Linux 下 getopt() 的使用</p>
+<p>第一篇博客，github + jekyll</p>
+
+<p>介绍 Linux 下 getopt() 的使用</p>
 
 <h2 id="linux-c-之-getopt-函数">Linux C 之 getopt 函数</h2>
 

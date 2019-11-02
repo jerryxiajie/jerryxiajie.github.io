@@ -10,13 +10,14 @@ tags: Linux C
 {:toc}
 
 第一篇博客，github + jekyll
-介绍 Linux 下 getopt() 的使用
+
+介绍 Linux C getopt() 的使用
 
 
 
 
 
-## Linux C 之 getopt 函数
+## Linux C 之 getopt() 函数
 
 
 #### 1. 解决的问题 
