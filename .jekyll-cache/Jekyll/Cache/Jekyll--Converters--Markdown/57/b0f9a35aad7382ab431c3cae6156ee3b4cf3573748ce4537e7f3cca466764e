@@ -1,0 +1,200 @@
+I"�<ul id="markdown-toc">
+  <li><a href="#github--jekyll-博客搭建记录" id="markdown-toc-github--jekyll-博客搭建记录">Github + Jekyll 博客搭建记录</a>    <ul>
+      <li><a href="#github" id="markdown-toc-github">Github</a>        <ul>
+          <li><a href="#1-fork-一个已有的博客模板" id="markdown-toc-1-fork-一个已有的博客模板">1. fork 一个已有的博客模板</a></li>
+          <li><a href="#2修改仓库的配置" id="markdown-toc-2修改仓库的配置">2.修改仓库的配置</a></li>
+          <li><a href="#3clone-repo-到本地做修改" id="markdown-toc-3clone-repo-到本地做修改">3.clone repo 到本地做修改</a></li>
+        </ul>
+      </li>
+      <li><a href="#jekyll" id="markdown-toc-jekyll">Jekyll</a>        <ul>
+          <li><a href="#1安装-ruby" id="markdown-toc-1安装-ruby">1.安装 Ruby</a></li>
+          <li><a href="#2安装-rubygems" id="markdown-toc-2安装-rubygems">2.安装 RubyGems</a></li>
+        </ul>
+      </li>
+      <li><a href="#3-安装-jekyll" id="markdown-toc-3-安装-jekyll">3. 安装 Jekyll</a>        <ul>
+          <li><a href="#4修改-_configyml" id="markdown-toc-4修改-_configyml">4.修改 _config.yml</a>            <ul>
+              <li><a href="#41-修改界面显示信息" id="markdown-toc-41-修改界面显示信息">4.1 修改界面显示信息</a></li>
+              <li><a href="#42-修改博客主页的主题" id="markdown-toc-42-修改博客主页的主题">4.2 修改博客主页的主题</a></li>
+              <li><a href="#43-修改网页小图标-faviconico" id="markdown-toc-43-修改网页小图标-faviconico">4.3 修改网页小图标 favicon.ico</a></li>
+              <li><a href="#44-配置网页访问次数-busuanzi" id="markdown-toc-44-配置网页访问次数-busuanzi">4.4 配置网页访问次数 busuanzi</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#blog-文章提交" id="markdown-toc-blog-文章提交">Blog 文章提交</a></li>
+      <li><a href="#blog-theme" id="markdown-toc-blog-theme">Blog theme</a></li>
+      <li><a href="#todo" id="markdown-toc-todo">TODO</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>参考网上 github 搭建博客的介绍完成这个博客的搭建，但是由于网上的一些文档比较旧，中间遇到了一些问题，这里记录搭建的过程；</p>
+
+<h2 id="github--jekyll-博客搭建记录">Github + Jekyll 博客搭建记录</h2>
+
+<h3 id="github">Github</h3>
+
+<h4 id="1-fork-一个已有的博客模板">1. fork 一个已有的博客模板</h4>
+
+<p>这里 fork 的是下面的仓库 :</p>
+<blockquote>
+  <p>https://github.com/xudailong/xudailong.github.io</p>
+</blockquote>
+
+<h4 id="2修改仓库的配置">2.修改仓库的配置</h4>
+
+<p>修改 repository name，将名字改成 <strong><em>“github username”+.github.io</em></strong>
+,这时就可以访问博客了，地址就是:</p>
+<blockquote>
+  <p>https://jerryxiajie.github.io/</p>
+</blockquote>
+
+<p>但是这时博客里是别人的博客内容，还需要后面的修改。</p>
+
+<p><img src="/img/blog_20191102/blog_20191102_1.png" alt="repo setting" /></p>
+
+<h4 id="3clone-repo-到本地做修改">3.clone repo 到本地做修改</h4>
+
+<blockquote>
+  <p>git clone https://github.com/jerryxiajie/jerryxiajie.github.io.git</p>
+</blockquote>
+
+<p><img src="/img/blog_20191102/blog_20191102_2.png" alt="local_menu" /></p>
+
+<p>需要关注的内容是上图中的 <strong><em>_posts</em></strong> 和 <strong><em>_config.yml</em></strong></p>
+<ul>
+  <li>_posts：这个目录存放的就是我们的博客 Markdown 文档；</li>
+  <li>_config.yml：这个文件是 jekyll 的配置文件；</li>
+</ul>
+
+<h3 id="jekyll">Jekyll</h3>
+
+<h4 id="1安装-ruby">1.安装 Ruby</h4>
+
+<p>Ruby 官网下载地址:</p>
+<blockquote>
+  <p>https://rubyinstaller.org/downloads/</p>
+</blockquote>
+
+<p><img src="/img/blog_20191102/blog_20191102_3.png" alt="" /></p>
+
+<p>注意这里要选 <strong><em>WITH DEVKIT</em></strong></p>
+
+<h4 id="2安装-rubygems">2.安装 RubyGems</h4>
+
+<p>RubyGems 官网下载地址：</p>
+<blockquote>
+  <p>https://rubygems.org/pages/download</p>
+</blockquote>
+
+<p>下载完成解压后：</p>
+
+<p><img src="/img/blog_20191102/blog_20191102_4.png" alt="" /></p>
+
+<p>在这个目录下打开 cmd 执行</p>
+
+<blockquote>
+  <p>ruby setup.rb</p>
+</blockquote>
+
+<p>按照安装过程中的提示安装</p>
+
+<h3 id="3-安装-jekyll">3. 安装 Jekyll</h3>
+
+<p>cd 到仓库目录执行：</p>
+
+<blockquote>
+  <p>gem install jekyll</p>
+</blockquote>
+
+<p><strong><em>这个过程需要修改 gem 的源，修改成下面的源，执行下面的命令查看当前的源：</em></strong></p>
+<blockquote>
+  <blockquote>
+    <p>gem source -l</p>
+  </blockquote>
+</blockquote>
+
+<p><img src="/img/blog_20191102/blog_20191102_5.png" alt="gem_souce" /></p>
+
+<p>移除当前的source:</p>
+<blockquote>
+  <blockquote>
+    <p>gem source -r XXXXX</p>
+  </blockquote>
+</blockquote>
+
+<p>添加可用的source：</p>
+<blockquote>
+  <blockquote>
+    <p>gem sources –add https://gems.ruby-china.com/</p>
+  </blockquote>
+</blockquote>
+
+<p>更新当前的</p>
+<blockquote>
+  <blockquote>
+    <p>gem source -u</p>
+  </blockquote>
+</blockquote>
+
+<h4 id="4修改-_configyml">4.修改 _config.yml</h4>
+
+<h5 id="41-修改界面显示信息">4.1 修改界面显示信息</h5>
+
+<p>参照下面的对应关系做修改</p>
+
+<p><img src="/img/blog_20191102/blog_20191102_6.png" alt="" /></p>
+
+<h5 id="42-修改博客主页的主题">4.2 修改博客主页的主题</h5>
+
+<p><img src="/img/blog_20191102/blog_20191102_7.png" alt="" /></p>
+
+<h5 id="43-修改网页小图标-faviconico">4.3 修改网页小图标 favicon.ico</h5>
+
+<p><img src="/img/blog_20191102/blog_20191102_8.png" alt="" /></p>
+
+<p>一个免费生成 favicon 的网站：</p>
+
+<blockquote>
+  <p>https://favicon.io/</p>
+</blockquote>
+
+<p>选择根据文本生成 icon :</p>
+
+<p><img src="/img/blog_20191102/blog_20191102_9.png" alt="" /></p>
+
+<p>这里可以输入文本，选择背景和文字颜色、字体和大小、图标的形状；</p>
+
+<h5 id="44-配置网页访问次数-busuanzi">4.4 配置网页访问次数 busuanzi</h5>
+
+<p>参考：</p>
+
+<blockquote>
+  <p>https://busuanzi.ibruce.info/</p>
+</blockquote>
+
+<p>需要修改：
+<img src="/img/blog_20191102/blog_20191102_10.png" alt="" /></p>
+
+<h3 id="blog-文章提交">Blog 文章提交</h3>
+
+<p>博客按照 Markdown 语法写就好，注意博客的文件名：</p>
+
+<p>格式： <strong><em>时间-文件名.md</em></strong></p>
+
+<blockquote>
+  <p>2019-11-02-Linux-getopt.md</p>
+</blockquote>
+
+<h3 id="blog-theme">Blog theme</h3>
+
+<p>博客的主题可以切换，参考：</p>
+
+<blockquote>
+  <p>http://jekyllthemes.org/</p>
+</blockquote>
+
+<h3 id="todo">TODO</h3>
+
+<p>Todo：加入评论功能；</p>
+:ET
